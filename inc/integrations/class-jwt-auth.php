@@ -188,7 +188,7 @@ class JWT_Auth {
 		// phpcs:ignore
 		setcookie(
 			self::COOKIE_NAME,
-			null,
+			'',
 			-1,
 			'/',
 			$this->cookie_domain

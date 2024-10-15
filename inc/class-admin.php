@@ -104,7 +104,7 @@ class Admin {
 	 */
 	public function hook_taxonomy_row_actions() {
 		foreach ( get_taxonomies() as $taxonomy ) {
-			add_filter( "${taxonomy}_row_actions", [ $this, 'add_api_link_to_terms' ], 10, 2 );
+			add_filter( "{$taxonomy}_row_actions", [ $this, 'add_api_link_to_terms' ], 10, 2 );
 		}
 	}
 
